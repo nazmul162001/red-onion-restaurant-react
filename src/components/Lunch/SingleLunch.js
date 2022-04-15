@@ -13,7 +13,7 @@ const SingleLunch = ({food}) => {
           See Details
         </button>
         <button className="btn-style btn-2 py-2 px-5 ml-2 rounded-l-full">
-          Order Now
+        Add to Cart
         </button>
       </div>
     </div>

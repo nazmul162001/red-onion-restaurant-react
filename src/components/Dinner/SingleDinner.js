@@ -1,7 +1,6 @@
 import React from 'react';
-import './SingleBreakFast.css';
 
-const SingleBreakFast = ({ food }) => {
+const SingleDinner = ({food}) => {
   const { name, img, description, price } = food;
   return (
     <div className="card-container">
@@ -21,4 +20,4 @@ const SingleBreakFast = ({ food }) => {
   );
 };
 
-export default SingleBreakFast;
+export default SingleDinner;
