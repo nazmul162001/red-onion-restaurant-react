@@ -1,0 +1,32 @@
+.card-container{
+  padding: 30px;
+  max-width: 400px ;
+  margin: auto;
+  transition: .2s ease-in-out;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.card-container:hover{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-bottom: 1px solid orangered;
+}
+.card-container img{
+  padding: 20px;
+}
+.btn-style{
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.card-container .btn-1{
+  transform: translate(-3000px);
+  transition: transform 0.4s ease-in-out ;
+}
+.card-container:hover .btn-1{
+  transform: translate(1px);
+}
+.card-container .btn-2{
+  transform: translate(3000px);
+  transition: transform 0.5s ease-in-out ;
+}
+.card-container:hover .btn-2{
+  transform: translate(1px);
+}
