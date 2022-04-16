@@ -2,8 +2,6 @@ import React from 'react';
 import logo from '../../images/logo2.png';
 import { BsCart2 } from 'react-icons/bs';
 import { Link, useNavigate } from 'react-router-dom';
-import HomePage from '../HomePage/HomePage';
-import FoodMenu from '../FoodMenu/FoodMenu';
 import { useCartContex } from '../../Contex/CartContex';
 
 const Header = () => {
@@ -38,8 +36,7 @@ const Header = () => {
           </Link>
         </div>
       </nav>
-      <HomePage></HomePage>
-      <FoodMenu></FoodMenu>
+
     </>
   );
 };

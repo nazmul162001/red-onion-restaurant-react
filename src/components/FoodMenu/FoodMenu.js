@@ -1,28 +1,16 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 import './FoodMenu.css';
 
-const FoodMenu = () => {
+
+const FoodMenu = ({handleCategory}) => {
   return (
     <section className="food-menu text-center my-10">
-      <NavLink
-        className={({isActive}) => (isActive ? 'active-link' : 'link')}
-        to="/breakfast"
-      >
-        Breakfast
-      </NavLink>
-      <NavLink
-        className={({isActive}) => (isActive ? 'active-link' : 'link')}
-        to="/Lunch"
-      >
-        Lunch
-      </NavLink>
-      <NavLink
-        className={({isActive}) => (isActive ? 'active-link' : 'link')}
-        to="/Dinner"
-      >
-        Dinner
-      </NavLink>
+      <div onClick={(e) => handleCategory(e)}>
+        <span className='bg-orange-300 rounded mx-3 cursor-pointer py-2 px-5'>All</span>
+        <span className='bg-orange-300 rounded mx-3 cursor-pointer py-2 px-5'>Breakfast</span>
+        <span className='bg-orange-300 rounded mx-3 cursor-pointer py-2 px-5'>Lunch</span>
+        <span className='bg-orange-300 rounded mx-3 cursor-pointer py-2 px-5'>Dinner</span>
+      </div>
     </section>
   );
 };

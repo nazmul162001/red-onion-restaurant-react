@@ -1,8 +1,8 @@
 import React from 'react';
 import './HomePage.css';
-
 const HomePage = () => {
   return (
+    <div>
     <section className='hero flex justify-center items-center text-center'>
       <div className="hero-content">
         <h1 className="hero-title text-4xl py-5 font-semibold text-gray-700">
@@ -14,6 +14,7 @@ const HomePage = () => {
         </div>
       </div>
     </section>
+    </div>
   );
 };
 
