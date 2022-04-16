@@ -1,6 +1,7 @@
 import React from 'react';
 import { useCartContex } from '../../Contex/CartContex';
-import './SingleBreakFast.css'
+import './SingleBreakFast.css';
+import { motion } from "framer-motion"
 
 
 const SingleBreakFast = ({food}) => {
@@ -13,7 +14,8 @@ const SingleBreakFast = ({food}) => {
   }
 
   return (
-    <div className="card-container">
+
+    <motion.div animate={{scale: 1}} style={{transform: 'scale(.5)'}}  className="card-container">
       <img src={img} alt="" />
       <h2 className="text-xl"> {name} </h2>
       <p className="text-slate-500"> {description} </p>
@@ -29,7 +31,7 @@ const SingleBreakFast = ({food}) => {
           Add to Cart
         </button>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
