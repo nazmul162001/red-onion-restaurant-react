@@ -1,8 +1,17 @@
 import React from 'react';
-import './SingleBreakFast.css';
+import { useCartContex } from '../../Contex/CartContex';
+import './SingleBreakFast.css'
 
-const SingleBreakFast = ({ food }) => {
+
+const SingleBreakFast = ({food}) => {
   const { name, img, description, price } = food;
+  const {cart, setCart} = useCartContex()
+
+
+  const handleAddToCart = (item) => {
+    setCart([...cart, item])
+  }
+
   return (
     <div className="card-container">
       <img src={img} alt="" />
@@ -13,7 +22,10 @@ const SingleBreakFast = ({ food }) => {
         <button className="btn-style btn-1 py-2 mr-2 px-5 rounded-r-full">
           See Details
         </button>
-        <button className="btn-style btn-2 py-2 px-5 ml-2 rounded-l-full">
+        <button
+          onClick={() => handleAddToCart(food)}
+          className="btn-style btn-2 py-2 px-5 ml-2 rounded-l-full"
+        >
           Add to Cart
         </button>
       </div>
