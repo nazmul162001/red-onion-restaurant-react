@@ -9,7 +9,7 @@ const Header = () => {
   const {cart, setCart} = useCartContex()
   return (
     <>
-      <nav className="h-24 bg-white sticky top-0 flex items-center justify-between px-14">
+      <nav className="h-24 bg-white sticky top-0 z-10 flex items-center justify-between px-14">
         <div className="logo">
           <img style={{ height: '40px' }} src={logo} alt="" />
         </div>

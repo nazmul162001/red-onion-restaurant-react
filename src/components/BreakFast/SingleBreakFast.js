@@ -15,7 +15,7 @@ const SingleBreakFast = ({food}) => {
 
   return (
 
-    <motion.div animate={{scale: 1}} style={{transform: 'scale(.5)'}}  className="card-container">
+    <motion.div animate={{transform: 'scale(1)'}} style={{transform: 'scale(0)'}}  className="card-container">
       <img src={img} alt="" />
       <h2 className="text-xl"> {name} </h2>
       <p className="text-slate-500"> {description} </p>
