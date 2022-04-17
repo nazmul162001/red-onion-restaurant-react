@@ -4,6 +4,8 @@ import { BsCart2 } from 'react-icons/bs';
 import { Link, useNavigate } from 'react-router-dom';
 import { useCartContex } from '../../Contex/CartContex';
 
+
+
 const Header = () => {
   const navigate = useNavigate();
   const {cart, setCart} = useCartContex()
@@ -18,7 +20,7 @@ const Header = () => {
           <div
             onClick={() => navigate('cartDetails')}
             className="cart-icon relative cursor-pointer"
-          >
+          > {/** cart */}
             <BsCart2 className="text-2xl" />
             <div className="absolute bg-yellow-300 opacity-90 w-5 h-5 rounded-full top-[-8px] right-[-10px] flex justify-center items-center">
               {cart.length}
